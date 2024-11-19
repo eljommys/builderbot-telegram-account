@@ -219,7 +219,7 @@ class TelegramAccountProvider extends ProviderClass<TelegramEvents> {
         ),
       password: async () =>
         new Promise((resolve) =>
-          rl.question("Please enter your password: ", resolve)
+          rl.question("Please enter your 2FA code: ", resolve)
         ),
       phoneCode: async () =>
         new Promise((resolve) =>
